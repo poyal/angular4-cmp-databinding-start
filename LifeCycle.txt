@@ -13,7 +13,7 @@ ngAfterContentCheck   AfterContentChecked은 외부의 component를 불러오고
 ngAfterContentInit -> ngAfterContentCheck
 
 ngAfterViewInit       component의 view와 하위 component의 view가 초기화가 된 후 최초 1회 실행 됩니다.
-ngAfterViewCheck      AfterViewInit은 최초 1회만 실행되지만, AfterViewChecked는 component의 view와 하위 component의 view가 초기화된 후 모든 변화에 실행이 됩니다.(view 뿐만 아니라 property 변경, function 실행 등등)
+ngAfterViewCheck      AfterViewChecked는 component의 view와 하위 component의 view가 초기화된 후 모든 변화에 실행이 됩니다.(view 뿐만 아니라 property 변경, function 실행 등등)
 
 순서
 ngAfterViewInit -> ngAfterViewCheck
