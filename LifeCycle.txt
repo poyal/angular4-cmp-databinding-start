@@ -3,7 +3,7 @@ ngOnInit              component 초기화시 사용합니다. 사용시 ngOnInt�
 ngDoCheck             OnChanges와 비슷해 보일 수 있으나, ngDoCheck는 모든 변경 사항에 대해서 실행이 됩니다. Input property 뿐만 아니라 모든 property에서도 변경이 있을 시 실행됩니다.
 ngOnDestroy           component 혹은 directive가 제거 될 때 실행 합니다. 메모리 누수를 막기 위해 정리하는 코드가 들어가 있습니다.
 
-순서 ngOnChanges -> ngDoCheck -> ngOnInit -> ngOnDestroy
+순서 constructor -> ngOnChanges -> ngDoCheck -> ngOnInit -> ngOnDestroy
 
 
 ngAfterContentInit    AfterContentInit은 외부의 component를 불러오고 나서 최초 1회 실행 됩니다.(ex. ng-content로 외부 component 불러올 때 등등)
